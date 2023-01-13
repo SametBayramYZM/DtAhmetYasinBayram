@@ -20,7 +20,7 @@
             <div id="btnHero" class="d-grid">
 
                 <button type="button"
-                        class="btn btn-outline-success d-grid gap-2 col-6 btn-lg fw-bold me-md-2">
+                        class="btn btn-outline-success d-grid gap-2 col-6 btn-lg fw-bold me-md-2" onclick="scrollDown()">
                     Adres
                 </button>
 
@@ -43,20 +43,90 @@
 
 <hr id="hrFeaturette" />
 
+<table class="table table-dark table-hover">
+    <tr>
+        <th>Gün</th>
+        <th>Açılış Saati</th>
+        <th>Kapanış Saati</th>
+    </tr>
+    <tr>
+        <td>Pazartesi</td>
+        <td>10:00</td>
+        <td>19:00</td>
+    </tr>
+    <tr>
+        <td>Salı</td>
+        <td>10:00</td>
+        <td>19:00</td>
+    </tr>
+    <tr>
+        <td>Çarşamba</td>
+        <td>10:00</td>
+        <td>19:00</td>
+    </tr>
+    <tr>
+        <td>Perşembe</td>
+        <td>10:00</td>
+        <td>19:00</td>
+    </tr>
+    <tr>
+        <td>Cuma</td>
+        <td>10:00</td>
+        <td>19:00</td>
+    </tr>
+    <tr>
+        <td>Cumartesi</td>
+        <td>10:00</td>
+        <td>19:00</td>
+    </tr>
+</table>
+
+
+<form>
+    <label for="name" class="form-label">Adınız:</label><br>
+    <input type="text" id="name" name="name" class="form-control"><br><br>
+    <label for="phone" class="form-label">Telefon Numaranız:</label><br>
+    <input for="phone" class="form-control"><br><br>
+    <label for="appointment" class="form-label">Randevu Tarihi:</label><br>
+    <input type="date" id="appointment" name="appointment" class="form-control"><br><br>
+    <label for="time" class="form-label">Randevu Saati:</label><br>
+    <input type="time" id="time" name="time" class="form-control"><br><br>
+    <label for="message" class="form-label">Mesajınız:</label><br>
+    <textarea id="message" name="message" rows="5" cols="40" class="form-control"></textarea><br><br>
+    <input type="submit" value="Gönder" class="btn btn-primary">
+</form>
+
+<hr id="hrFeaturette" />
+
 <!-- Featurette Div -->
 <div id="divFeaturette" class="container-fluid">
 
     <!-- Featurette -->
-    <div id="featurette" class="container row col-md-6">
+    <div id="featurette" class="container row">
 
         <!--  -->
-        <h2 headfeaturette>Tedavi İsmi</h2>
+        <div class="col-md-7">
+
+            <!--  -->
+            <h2 headfeaturette>Endodonti</h2>
+
+            <!--  -->
+            <p class="lead">
+                Endodonti tedavisi, ağız içinde bulunan dişlerin pulpasının (diş eti dokusu) tedavisi anlamına gelir. Bu tedavi, dişin içindeki sinirlerin ve damarların çıkarılması ve dişin içi pıhtılaştırıcı madde ile doldurulması işlemlerini içerir. Endodonti tedavisi, diş ağrısı veya enfeksiyonlarını önlemek için yapılır ve genellikle dişlerin koruyucu kaplama altında kalmasına yardımcı olur.
+
+                Endodonti tedavisinin nasıl yapıldığı, dişin durumuna ve ne kadar hasar gördüğüne göre değişebilir. Genellikle, bir diş hekimi tarafından yapılan endodonti tedavisi şu şekilde gerçekleştirilir:
+
+                Dişin üstündeki kaplama veya diş eti açılır ve dişin içine ulaşılır.
+                Pulpa (diş eti dokusu) çıkarılır ve dişin içi temizlenir.
+                Dişin içi pıhtılaştırıcı madde ile doldurulur.
+                Diş kaplama altına alınır veya dişin üstü yeniden kaplanır.
+                Endodonti tedavisi, genellikle anestezi altında yapılır ve birkaç seanslık bir süreç olabilir.
+            </p>
+
+        </div>
 
         <!--  -->
-        <p class="lead">Tedavi hakkında kısa ve öz açıklama yazısı.</p>
-
-        <!--  -->
-        <div id="imgFeaturette" class="">
+        <div id="imgFeaturette" class="col-md-5">
             <img class="rounded-2"
                  src="https://reyaphastanesi.com.tr/wp-content/uploads/2022/03/dentist-examines-girl-chair.jpg"
                  alt="" 
@@ -68,16 +138,32 @@
     <hr id="hrFeaturette" />
 
     <!-- Featurette -->
-    <div id="featurette" class="container row justify-content-lg-between">
+    <div id="featurette" class="container row">
 
         <!--  -->
-        <h2 id="headfeaturette">Tedavi İsmi</h2>
+        <div class="col-md-7 order-md-2">
+
+            <!--  -->
+            <h2 headfeaturette>Restoratif Dolgu</h2>
+
+            <!--  -->
+            <p class="lead">
+                Restoratif dolgu, dişlerin zarar görmüş veya çürümüş kısımlarının onarılması için kullanılan bir yöntemdir. Bu dolgu, dişlerin önlerinde görünür olan yüzeylerinde veya arka dişlerde kullanılabilir. Restoratif dolgular, dişlerin doğal görünümünü korur ve ağız sağlığını korur.
+
+                Restoratif dolguların nasıl yapıldığı, dişin durumuna ve ne kadar hasar gördüğüne göre değişebilir. Genellikle, bir diş hekimi tarafından yapılan restoratif dolgu işlemi şu şekilde gerçekleştirilir:
+
+                Dişin üstündeki kaplama veya diş eti açılır ve dişin içine ulaşılır.
+                Dişin zarar görmüş veya çürümüş kısmı temizlenir ve şekillendirilir.
+                Restoratif malzeme (çoğunlukla amalgam, kompozit rezin veya porselen) dişin içine uygulanır.
+                Restoratif malzeme ısıtılır veya ışıkla kurutulur, bu sayede dişe sıkıca yapışır.
+                Diş kaplama altına alınır veya dişin üstü yeniden kaplanır.
+                Restoratif dolgu işlemi, genellikle anestezi altında yapılır ve birkaç seanslık bir süreç olabilir.
+            </p>
+
+        </div>
 
         <!--  -->
-        <p class="lead">Tedavi hakkında kısa ve öz açıklama yazısı.</p>
-
-        <!--  -->
-        <div id="imgFeaturette" class="col-4">
+        <div id="imgFeaturette" class="col-md-5 order-md-1">
             <img class="rounded-2"
                  src="https://reyaphastanesi.com.tr/wp-content/uploads/2022/03/dentist-examines-girl-chair.jpg"
                  alt="" 
@@ -91,16 +177,30 @@
     <hr id="hrFeaturette" />
 
     <!-- Featurette -->
-    <div id="featurette" class="container row col-md-6">
+    <div id="featurette" class="container row">
 
         <!--  -->
-        <h2 headfeaturette>Tedavi İsmi</h2>
+        <div class="col-md-7">
+
+            <!--  -->
+            <h2 headfeaturette>İmplant</h2>
+
+            <!--  -->
+            <p class="lead">
+                İmplant tedavisi, ağız içinde bulunan dişlerin yerine geçen, vücudun dokularıyla bütünleşen metal parçaların yerleştirilmesi işlemine verilen isimdir. Bu implantlar, dişlerin yerine geçen protezlerin takılması için kullanılır ve dişlerin eksikliğinin giderilmesine yardımcı olur. İmplant tedavisi, dişlerin çekilmesi veya doğuştan eksik olması gibi nedenlerle dişlerin eksikliğinin giderilmesi için kullanılır.
+
+                İmplant tedavisinin nasıl yapıldığı, her hastanın durumuna göre değişebilir. Genellikle, bir diş hekimi tarafından yapılan implant tedavisi şu şekilde gerçekleştirilir:
+
+                Ağız içinde implantın yerleştirileceği bölge anestezi altında numaralandırılır.
+                Implantın yerleştirileceği bölge açılır ve implantın yerleştirileceği bölge temizlenir.
+                İmplant yerleştirilir ve implantın yerleştirileceği bölge kapatılır.
+                İmplant tedavisi, genellikle birkaç seanslık bir süreç olabilir ve birkaç hafta sürebilir.
+            </p>
+
+        </div>
 
         <!--  -->
-        <p class="lead">Tedavi hakkında kısa ve öz açıklama yazısı.</p>
-
-        <!--  -->
-        <div id="imgFeaturette" class="">
+        <div id="imgFeaturette" class="col-md-5">
             <img class="rounded-2"
                  src="https://reyaphastanesi.com.tr/wp-content/uploads/2022/03/dentist-examines-girl-chair.jpg"
                  alt=""
@@ -108,6 +208,45 @@
                  height="" />
         </div>
     </div>
+
+    <hr id="hrFeaturette" />
+
+    <!-- Featurette -->
+    <div id="featurette" class="container row">
+
+        <!--  -->
+        <div class="col-md-7 order-md-2">
+
+            <!--  -->
+            <h2 headfeaturette>Zirkonyum Kaplama</h2>
+
+            <!--  -->
+            <p class="lead">
+                Zirkonyum kaplama tedavisi, dişlerin önlerinde görünür olan yüzeylerinde kullanılan bir kaplama yöntemidir. Bu kaplama, dişlerin doğal görünümünü korur ve ağız sağlığını korur. Zirkonyum, dişlerin kaplaması için kullanılan bir malzemedir ve dişlerin kaplamasının daha dayanıklı ve güçlü olmasını sağlar.
+
+                Zirkonyum kaplama tedavisinin nasıl yapıldığı, dişin durumuna ve ne kadar hasar gördüğüne göre değişebilir. Genellikle, bir diş hekimi tarafından yapılan zirkonyum kaplama tedavisi şu şekilde gerçekleştirilir:
+
+                Dişin üstündeki kaplama veya diş eti açılır ve dişin içine ulaşılır.
+                Dişin zarar görmüş veya çürümüş kısmı temizlenir ve şekillendirilir.
+                Zirkonyum malzemesi dişin üzerine uygulanır ve şekillendirilir.
+                Zirkonyum malzemesi ısıtılır veya ışıkla kurutulur, bu sayede dişe sıkıca yapışır.
+                Zirkonyum kaplama tedavisi, genellikle anestezi altında yapılır ve birkaç seanslık bir süreç olabilir.
+            </p>
+
+        </div>
+
+        <!--  -->
+        <div id="imgFeaturette" class="col-md-5 order-md-1">
+            <img class="rounded-2"
+                 src="https://reyaphastanesi.com.tr/wp-content/uploads/2022/03/dentist-examines-girl-chair.jpg"
+                 alt=""
+                 width=""
+                 height=""
+                 style="" />
+        </div>
+
+    </div>
+
 </div>
 
 <!-- Cards Div -->
@@ -182,7 +321,7 @@
             </div>
 
             <div class="col">
-                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" id="card3" style="background-image: url('');">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" id="card3">
                     <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                         <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Line Height.</h3>
                         <ul class="d-flex list-unstyled mt-auto">

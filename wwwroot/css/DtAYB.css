@@ -62,6 +62,24 @@ body {
 #divCards {
 
 }
+    
+    .card-cover {
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+
+        #card1 {
+            background-image: url("https://reyaphastanesi.com.tr/wp-content/uploads/2022/03/dentist-examines-girl-chair.jpg");
+        }
+
+        #card2 {
+            background-image: url("https://reyaphastanesi.com.tr/wp-content/uploads/2022/03/dentist-examines-girl-chair.jpg");
+        }
+
+        #card3 {
+            background-image: url("https://reyaphastanesi.com.tr/wp-content/uploads/2022/03/dentist-examines-girl-chair.jpg");
+        }
 
 #divCarousel {
     height: 41.7rem;
@@ -106,6 +124,10 @@ body {
         height: 100%;
         margin-bottom: 10rem;
     }
+
+        .carousel-item {
+            padding-left: 0.9375rem;
+        }
 
         #imgCarousel {
             height: 41.7rem;
